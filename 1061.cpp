@@ -46,11 +46,6 @@ void solve(){
 	}
 	dp.resize(n+1, -1);
 	for(int i = 1; i <= n; ++i){
-		if(sz(a[i])==0){
-			dp[i] = 1e9;
-		}
-	}
-	for(int i = 1; i <= n; ++i){
 		if(dp[i]==-1){
 			dp[i] = f(i, a);
 		}
@@ -65,8 +60,8 @@ int main(){
 	ios::sync_with_stdio(0);
 	cin.tie(0);
 
-	// int tc; cin >> tc;
-	// while(tc--)
+	//int tc; cin >> tc;
+	//while(tc--)
 		solve();
 
 	return 0;
